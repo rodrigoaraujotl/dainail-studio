@@ -8,15 +8,14 @@ const Footer = () => {
           {/* Logo e Descrição */}
           <div className="space-y-4">
             <div className="flex items-center space-x-2">
-              <div className="w-8 h-8 gradient-luxury rounded-full flex items-center justify-center">
-                <span className="text-luxury-foreground font-bold text-sm">D</span>
-              </div>
-              <span className="font-playfair font-semibold text-xl">
-                Daiani Nail Designer
-              </span>
+                <img 
+                  src={'/lovable-uploads/63f54e26-1aab-4b39-b08b-b5e1bd047ae6.png'}
+                  alt="Daiane Lima Nail Designer" 
+                  className="w-40 h-auto brightness-1 invert"
+                />
             </div>
             <p className="text-background/80 text-sm leading-relaxed">
-              Transformando unhas em arte há mais de 5 anos. Especializada em técnicas 
+              Transformando unhas em arte há mais de 8 anos. Especializada em técnicas 
               avançadas de alongamento e nail design.
             </p>
             <div className="flex space-x-4">
@@ -37,10 +36,10 @@ const Footer = () => {
             <ul className="space-y-2 text-sm">
               <li>
                 <a href="#cursos" className="text-background/80 hover:text-luxury transition-smooth">
-                  Curso Básico
+                  Master Excelência - A Retomada
                 </a>
               </li>
-              <li>
+              {/* <li>
                 <a href="#cursos" className="text-background/80 hover:text-luxury transition-smooth">
                   Curso Avançado
                 </a>
@@ -54,7 +53,7 @@ const Footer = () => {
                 <a href="#cursos" className="text-background/80 hover:text-luxury transition-smooth">
                   Cursos Online
                 </a>
-              </li>
+              </li> */}
             </ul>
           </div>
 
@@ -64,7 +63,7 @@ const Footer = () => {
             <ul className="space-y-2 text-sm">
               <li>
                 <a href="#sobre" className="text-background/80 hover:text-luxury transition-smooth">
-                  Sobre a Daiani
+                  Sobre a Daiane
                 </a>
               </li>
               <li>
@@ -77,11 +76,11 @@ const Footer = () => {
                   Contato
                 </a>
               </li>
-              <li>
+              {/* <li>
                 <a href="#" className="text-background/80 hover:text-luxury transition-smooth">
                   Depoimentos
                 </a>
-              </li>
+              </li> */}
             </ul>
           </div>
 
@@ -92,19 +91,19 @@ const Footer = () => {
               <div className="flex items-center space-x-3">
                 <MapPin className="h-4 w-4 text-luxury flex-shrink-0" />
                 <span className="text-background/80">
-                  São Paulo, SP - Brasil
+                  Barueri, SP - Brasil
                 </span>
               </div>
               <div className="flex items-center space-x-3">
                 <Phone className="h-4 w-4 text-luxury flex-shrink-0" />
                 <span className="text-background/80">
-                  (11) 99999-9999
+                  (11) 94997-6751
                 </span>
               </div>
               <div className="flex items-center space-x-3">
                 <Mail className="h-4 w-4 text-luxury flex-shrink-0" />
                 <span className="text-background/80">
-                  contato@dainaildesigner.com
+                  contato@daianelima.com.br
                 </span>
               </div>
               <div className="flex items-center space-x-3">
@@ -124,7 +123,7 @@ const Footer = () => {
 
         <div className="border-t border-background/20 mt-12 pt-8 text-center">
           <p className="text-background/60 text-sm">
-            © 2024 Daiani Nail Designer. Todos os direitos reservados.
+            © 2025 Daiane Lima Nail Designer. Todos os direitos reservados.
           </p>
         </div>
       </div>

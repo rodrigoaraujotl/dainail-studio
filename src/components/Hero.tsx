@@ -1,13 +1,15 @@
 import { Button } from "@/components/ui/button";
+import scrollTo from "@/hooks/use-scroll-to";
 
 const Hero = () => {
+
   return (
-    <section id="inicio" className="relative pt-24 pb-16 gradient-hero overflow-hidden">
+    <section id="inicio" className="relative pt-6 md:pt-20 pb-16 gradient-hero overflow-hidden">
       <div className="container mx-auto px-4">
         <div className="grid lg:grid-cols-2 gap-12 items-center">
-          <div className="space-y-8">
+          <div className="space-y-8 ">
             <div className="space-y-4">
-              <h1 className="font-playfair text-5xl lg:text-6xl font-bold text-foreground leading-tight">
+              <h1 className="font-whispering-signature text-5xl lg:text-6xl font-bold text-foreground leading-tight">
                 Transforme suas
                 <span className="block text-luxury"> unhas em arte</span>
               </h1>
@@ -21,6 +23,7 @@ const Hero = () => {
               <Button 
                 size="lg" 
                 className="bg-luxury hover:bg-luxury/90 text-luxury-foreground font-medium px-8 py-4 text-lg shadow-luxury transition-elegant"
+                onClick={() => scrollTo('cursos')}
               >
                 Ver Cursos
               </Button>
@@ -28,6 +31,7 @@ const Hero = () => {
                 size="lg" 
                 variant="outline" 
                 className="border-luxury text-luxury hover:bg-luxury hover:text-luxury-foreground px-8 py-4 text-lg transition-elegant"
+                onClick={() => scrollTo('whatsapp', true)}
               >
                 Falar no WhatsApp
               </Button>
@@ -35,11 +39,11 @@ const Hero = () => {
 
             <div className="flex items-center space-x-8 pt-4">
               <div className="text-center">
-                <div className="font-playfair text-3xl font-bold text-luxury">500+</div>
+                <div className="font-playfair text-3xl font-bold text-luxury">50+</div>
                 <div className="text-sm text-muted-foreground">Alunas formadas</div>
               </div>
               <div className="text-center">
-                <div className="font-playfair text-3xl font-bold text-luxury">5</div>
+                <div className="font-playfair text-3xl font-bold text-luxury">8</div>
                 <div className="text-sm text-muted-foreground">Anos de experiência</div>
               </div>
               <div className="text-center">
@@ -52,7 +56,7 @@ const Hero = () => {
           <div className="relative">
             <div className="relative z-10">
               <img 
-                src="/lovable-uploads/f8eca3f8-7b10-4bb7-a0b6-a9c0dc6fe78f.png" 
+                src="/lovable-uploads/e36af54b-d7cf-48bb-bd9f-4a889eff28ea.png" 
                 alt="Daiani Nail Designer - Profissional especializada em alongamento de unhas"
                 className="w-full h-auto rounded-2xl shadow-elegant transition-elegant hover:scale-105"
               />

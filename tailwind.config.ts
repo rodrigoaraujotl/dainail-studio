@@ -21,7 +21,8 @@ export default {
 			fontFamily: {
 				'santral': ['Santral', 'serif'],
 				'twentieth': ['Twentieth Century', 'sans-serif'],
-				'inter': ['Inter', 'sans-serif'],
+				'julius-sans-one': ['Julius Sans One', 'sans-serif'],
+				'whispering-signature': ['Whispering Signature-Personal use', 'sans-serif']
 			},
 			colors: {
 				border: 'hsl(var(--border))',

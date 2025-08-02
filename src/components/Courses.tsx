@@ -10,6 +10,7 @@ const Courses = () => {
       format: "Presencial - Barueri/SP",
       price: "R$ 1.497",
       originalPrice: "R$ 1.711",
+      popular: true,
       date: "24, 25 e 26/08",
       features: [
         "Imersão presencial de 3 dias",
@@ -25,50 +26,50 @@ const Courses = () => {
         "Cartão: 6x R$ 285,23 sem juros"
       ],
       featured: true
-    },
-    {
-      title: "Curso Básico de Alongamento",
-      description: "Para iniciantes que querem aprender as técnicas fundamentais",
-      duration: "40 horas",
-      format: "Presencial",
-      price: "R$ 897",
-      features: [
-        "Preparação da unha natural",
-        "Técnicas de alongamento com fibra",
-        "Aplicação de gel e esmaltação",
-        "Kit completo de materiais",
-        "Certificado de conclusão"
-      ]
-    },
-    {
-      title: "Curso Avançado de Nail Art",
-      description: "Técnicas avançadas para profissionais experientes",
-      duration: "60 horas",
-      format: "Presencial + Online",
-      price: "R$ 1.297",
-      features: [
-        "Técnicas avançadas de decoração",
-        "Nail art com pedras e acessórios",
-        "Alongamento com formas especiais",
-        "Marketing para nail designers",
-        "Suporte pós-curso por 6 meses"
-      ],
-      popular: true
-    },
-    {
-      title: "Intensivo Weekend",
-      description: "Curso intensivo de fim de semana para quem tem pouco tempo",
-      duration: "16 horas",
-      format: "Presencial",
-      price: "R$ 597",
-      features: [
-        "Técnicas essenciais concentradas",
-        "Prática intensiva",
-        "Material básico incluso",
-        "Foco em resultados rápidos",
-        "Certificado digital"
-      ]
     }
+    // {
+    //   title: "Curso Básico de Alongamento",
+    //   description: "Para iniciantes que querem aprender as técnicas fundamentais",
+    //   duration: "40 horas",
+    //   format: "Presencial",
+    //   price: "R$ 897",
+    //   features: [
+    //     "Preparação da unha natural",
+    //     "Técnicas de alongamento com fibra",
+    //     "Aplicação de gel e esmaltação",
+    //     "Kit completo de materiais",
+    //     "Certificado de conclusão"
+    //   ]
+    // },
+    // {
+    //   title: "Curso Avançado de Nail Art",
+    //   description: "Técnicas avançadas para profissionais experientes",
+    //   duration: "60 horas",
+    //   format: "Presencial + Online",
+    //   price: "R$ 1.297",
+    //   features: [
+    //     "Técnicas avançadas de decoração",
+    //     "Nail art com pedras e acessórios",
+    //     "Alongamento com formas especiais",
+    //     "Marketing para nail designers",
+    //     "Suporte pós-curso por 6 meses"
+    //   ],
+    //   popular: true
+    // },
+    // {
+    //   title: "Intensivo Weekend",
+    //   description: "Curso intensivo de fim de semana para quem tem pouco tempo",
+    //   duration: "16 horas",
+    //   format: "Presencial",
+    //   price: "R$ 597",
+    //   features: [
+    //     "Técnicas essenciais concentradas",
+    //     "Prática intensiva",
+    //     "Material básico incluso",
+    //     "Foco em resultados rápidos",
+    //     "Certificado digital"
+    //   ]
+    // }
   ];
 
   return (
@@ -84,7 +85,7 @@ const Courses = () => {
           </p>
         </div>
 
-        <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+        <div className="grid grid-cols-1 gap-8 md:w-1/2 mx-auto">
           {courses.map((course, index) => (
             <Card 
               key={index} 
@@ -122,7 +123,7 @@ const Courses = () => {
                     <span>📍 {course.format}</span>
                   </div>
                   {course.date && (
-                    <div className="text-center">
+                    <div className="hidden text-center">
                       <span className="text-lg font-bold text-secondary">📅 {course.date}</span>
                     </div>
                   )}
@@ -166,7 +167,7 @@ const Courses = () => {
           ))}
         </div>
 
-        <div className="text-center mt-12">
+        <div className="hidden text-center mt-12">
           <Button 
             variant="outline" 
             size="lg"

@@ -7,11 +7,11 @@ const About = () => {
             <div className="space-y-4">
               <h2 className="font-playfair text-4xl lg:text-5xl font-bold text-foreground">
                 Sobre a 
-                <span className="text-luxury"> Daiani</span>
+                <span className="text-luxury"> Daiane Lima</span>
               </h2>
               <p className="text-lg text-muted-foreground leading-relaxed">
-                Especialista em nail design com mais de 5 anos de experiência, Daiani é referência em 
-                técnicas avançadas de alongamento de unhas. Com formação internacional e centenas de 
+                Especialista em nail design com mais de 8 anos de experiência, Daiane Lima é referência em 
+                técnicas avançadas de alongamento de unhas. Com formação internacional e dezenas de 
                 alunas formadas, ela compartilha todo seu conhecimento através de cursos práticos e 
                 didáticos.
               </p>
@@ -68,24 +68,24 @@ const About = () => {
           <div className="grid grid-cols-2 gap-4">
             <div className="space-y-4">
               <img 
-                src="/lovable-uploads/a955efc6-9421-43d6-a736-2d56d60b86c8.png"
+                src="/lovable-uploads/488057535_18272517715259576_3518223179043384497_n.jpg"
                 alt="Daiani trabalhando em nail design"
                 className="w-full h-64 object-cover rounded-2xl shadow-card transition-elegant hover:scale-105"
               />
               <img 
-                src="/lovable-uploads/97f373e9-44fd-47d1-b857-13387404d6c3.png"
+                src="/lovable-uploads/494399320_18275468296259576_3691692542977285555_n.jpg"
                 alt="Resultado profissional de nail art"
                 className="w-full h-48 object-cover rounded-2xl shadow-card transition-elegant hover:scale-105"
               />
             </div>
             <div className="space-y-4 pt-8">
               <img 
-                src="/lovable-uploads/e36af54b-d7cf-48bb-bd9f-4a889eff28ea.png"
+                src="/lovable-uploads/500942064_18278136652259576_3439535828057068887_n.jpg"
                 alt="Técnicas avançadas de alongamento"
                 className="w-full h-48 object-cover rounded-2xl shadow-card transition-elegant hover:scale-105"
               />
               <img 
-                src="/lovable-uploads/6fe7fe1c-3c10-4145-8e39-ecac731ee09d.png"
+                src="/lovable-uploads/503616046_18281458771259576_8453429072986239205_n.jpg"
                 alt="Nail design profissional"
                 className="w-full h-64 object-cover rounded-2xl shadow-card transition-elegant hover:scale-105"
               />

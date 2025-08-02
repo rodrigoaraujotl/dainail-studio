@@ -56,6 +56,10 @@ const Gallery = () => {
     setCurrentIndex(index);
   };
 
+  const goToInstagram = () => {
+    window.open("https://www.instagram.com/dainaildesigner_", "_blank");
+  }
+
   return (
     <section id="galeria" className="py-20 bg-background">
       <div className="container mx-auto px-4">
@@ -69,8 +73,9 @@ const Gallery = () => {
           </p>
         </div>
 
-        {/* Carrossel Principal */}
-        <div className="relative max-w-4xl mx-auto mb-12">
+        <div className="elfsight-app-b21f79c3-744c-4a42-9017-22b2af63445d" data-elfsight-app-lazy></div>
+
+        {/* <div className="relative max-w-4xl mx-auto mb-12">
           <div className="relative h-96 lg:h-[500px] rounded-3xl overflow-hidden shadow-elegant">
             <img 
               src={images[currentIndex].src}
@@ -78,10 +83,10 @@ const Gallery = () => {
               className="w-full h-full object-cover transition-all duration-500"
             />
             
-            {/* Overlay com gradiente */}
+            
             <div className="absolute inset-0 bg-gradient-to-t from-black/20 to-transparent"></div>
             
-            {/* Botões de navegação */}
+            
             <Button
               variant="outline"
               size="icon"
@@ -101,7 +106,7 @@ const Gallery = () => {
             </Button>
           </div>
 
-          {/* Indicadores */}
+          
           <div className="flex justify-center space-x-2 mt-6">
             {images.map((_, index) => (
               <button
@@ -117,7 +122,6 @@ const Gallery = () => {
           </div>
         </div>
 
-        {/* Grid de miniaturas */}
         <div className="grid grid-cols-2 md:grid-cols-4 gap-4 max-w-4xl mx-auto">
           {images.map((image, index) => (
             <button
@@ -139,7 +143,7 @@ const Gallery = () => {
               )}
             </button>
           ))}
-        </div>
+        </div> */}
 
         {/* Call to action */}
         <div className="text-center mt-16">
@@ -149,6 +153,7 @@ const Gallery = () => {
           <Button 
             size="lg"
             className="bg-luxury hover:bg-luxury/90 text-luxury-foreground font-medium px-8 py-4 text-lg shadow-luxury transition-elegant"
+            onClick={goToInstagram}
           >
             @dainaildesigner_
           </Button>
