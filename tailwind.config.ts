@@ -19,7 +19,8 @@ export default {
 		},
 		extend: {
 			fontFamily: {
-				'playfair': ['Playfair Display', 'serif'],
+				'santral': ['Santral', 'serif'],
+				'twentieth': ['Twentieth Century', 'sans-serif'],
 				'inter': ['Inter', 'sans-serif'],
 			},
 			colors: {

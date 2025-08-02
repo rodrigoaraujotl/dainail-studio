@@ -8,54 +8,54 @@ All colors MUST be HSL.
 
 @layer base {
   :root {
-    --background: 25 20% 98%;
-    --foreground: 20 14% 11%;
+    --background: 21 100% 95%;
+    --foreground: 263 6% 43%;
 
-    --card: 0 0% 100%;
-    --card-foreground: 20 14% 11%;
+    --card: 21 100% 98%;
+    --card-foreground: 263 6% 43%;
 
-    --popover: 0 0% 100%;
-    --popover-foreground: 20 14% 11%;
+    --popover: 21 100% 98%;
+    --popover-foreground: 263 6% 43%;
 
-    --primary: 20 14% 11%;
-    --primary-foreground: 25 20% 98%;
+    --primary: 358 60% 75%;
+    --primary-foreground: 21 100% 98%;
 
-    --secondary: 25 20% 96%;
-    --secondary-foreground: 20 14% 11%;
+    --secondary: 348 25% 61%;
+    --secondary-foreground: 21 100% 98%;
 
-    --muted: 25 20% 96%;
-    --muted-foreground: 20 14% 46%;
+    --muted: 348 25% 85%;
+    --muted-foreground: 263 6% 55%;
 
-    --accent: 35 100% 96%;
-    --accent-foreground: 20 14% 11%;
+    --accent: 12 100% 82%;
+    --accent-foreground: 263 6% 43%;
 
     --destructive: 0 84% 60%;
-    --destructive-foreground: 25 20% 98%;
+    --destructive-foreground: 21 100% 98%;
 
-    --border: 25 20% 90%;
-    --input: 25 20% 90%;
-    --ring: 20 14% 11%;
+    --border: 21 100% 90%;
+    --input: 21 100% 90%;
+    --ring: 358 60% 75%;
 
-    --luxury: 35 77% 49%;
-    --luxury-foreground: 25 20% 98%;
+    --luxury: 358 60% 75%;
+    --luxury-foreground: 21 100% 98%;
 
-    --gold: 45 100% 51%;
-    --gold-foreground: 20 14% 11%;
+    --gold: 21 100% 85%;
+    --gold-foreground: 263 6% 43%;
 
-    --rose: 340 82% 52%;
-    --rose-foreground: 25 20% 98%;
+    --rose: 348 25% 61%;
+    --rose-foreground: 21 100% 98%;
 
     --radius: 0.5rem;
 
     /* Gradients */
-    --gradient-luxury: linear-gradient(135deg, hsl(35, 77%, 49%), hsl(45, 100%, 51%));
-    --gradient-hero: linear-gradient(135deg, hsl(25, 20%, 98%), hsl(35, 100%, 96%));
-    --gradient-card: linear-gradient(145deg, hsl(0, 0%, 100%), hsl(25, 20%, 96%));
+    --gradient-luxury: linear-gradient(135deg, hsl(358, 60%, 75%), hsl(348, 25%, 61%));
+    --gradient-hero: linear-gradient(135deg, hsl(21, 100%, 95%), hsl(12, 100%, 82%));
+    --gradient-card: linear-gradient(145deg, hsl(21, 100%, 98%), hsl(21, 100%, 90%));
 
     /* Shadows */
-    --shadow-luxury: 0 10px 30px -10px hsl(35, 77%, 49%, 0.3);
-    --shadow-card: 0 4px 20px -4px hsl(20, 14%, 11%, 0.1);
-    --shadow-elegant: 0 8px 25px -8px hsl(35, 77%, 49%, 0.2);
+    --shadow-luxury: 0 10px 30px -10px hsl(358, 60%, 75%, 0.3);
+    --shadow-card: 0 4px 20px -4px hsl(263, 6%, 43%, 0.1);
+    --shadow-elegant: 0 8px 25px -8px hsl(358, 60%, 75%, 0.2);
 
     /* Animations */
     --transition-smooth: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
@@ -127,7 +127,11 @@ All colors MUST be HSL.
   }
 
   h1, h2, h3, h4, h5, h6 {
-    @apply font-playfair;
+    @apply font-santral;
+  }
+  
+  p, span, div {
+    @apply font-twentieth;
   }
 }
 
