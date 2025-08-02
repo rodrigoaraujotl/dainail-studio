@@ -4,6 +4,29 @@ import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/com
 const Courses = () => {
   const courses = [
     {
+      title: "Master Excelência - A Retomada",
+      description: "Uma imersão presencial transformadora de 3 dias, com técnica, estratégias e clareza. Reconecte-se com quem você realmente é!",
+      duration: "3 dias intensivos",
+      format: "Presencial - Barueri/SP",
+      price: "R$ 1.497",
+      originalPrice: "R$ 1.711",
+      date: "24, 25 e 26/08",
+      features: [
+        "Imersão presencial de 3 dias",
+        "Técnicas avançadas e estratégias",
+        "Desenvolvimento pessoal e profissional",
+        "15% de desconto à vista no PIX",
+        "Parcelamento facilitado sem juros",
+        "Pagamento direto sem maquininha"
+      ],
+      paymentOptions: [
+        "À vista: R$ 1.497 (15% desconto)",
+        "Facilitado: 3x R$ 297 + matrícula",
+        "Cartão: 6x R$ 285,23 sem juros"
+      ],
+      featured: true
+    },
+    {
       title: "Curso Básico de Alongamento",
       description: "Para iniciantes que querem aprender as técnicas fundamentais",
       duration: "40 horas",
@@ -52,7 +75,7 @@ const Courses = () => {
     <section id="cursos" className="py-20 gradient-hero">
       <div className="container mx-auto px-4">
         <div className="text-center mb-16">
-          <h2 className="font-playfair text-4xl lg:text-5xl font-bold text-foreground mb-4">
+          <h2 className="font-santral text-4xl lg:text-5xl font-bold text-foreground mb-4">
             Nossos <span className="text-luxury">Cursos</span>
           </h2>
           <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
@@ -67,6 +90,8 @@ const Courses = () => {
               key={index} 
               className={`relative transition-elegant hover:scale-105 shadow-card ${
                 course.popular ? 'border-2 border-luxury shadow-luxury' : ''
+              } ${
+                course.featured ? 'border-2 border-secondary shadow-luxury bg-gradient-card' : ''
               }`}
             >
               {course.popular && (
@@ -76,9 +101,16 @@ const Courses = () => {
                   </span>
                 </div>
               )}
+              {course.featured && (
+                <div className="absolute -top-4 left-1/2 transform -translate-x-1/2">
+                  <span className="bg-secondary text-secondary-foreground px-4 py-1 rounded-full text-sm font-medium">
+                    ⭐ Em Destaque
+                  </span>
+                </div>
+              )}
               
               <CardHeader className="text-center pb-4">
-                <CardTitle className="font-playfair text-2xl text-foreground mb-2">
+                <CardTitle className="font-santral text-2xl text-foreground mb-2">
                   {course.title}
                 </CardTitle>
                 <CardDescription className="text-muted-foreground mb-4">
@@ -89,11 +121,23 @@ const Courses = () => {
                     <span>⏱️ {course.duration}</span>
                     <span>📍 {course.format}</span>
                   </div>
-                  <div className="text-3xl font-playfair font-bold text-luxury">
-                    {course.price}
-                  </div>
-                  <div className="text-sm text-muted-foreground">
-                    ou 12x sem juros
+                  {course.date && (
+                    <div className="text-center">
+                      <span className="text-lg font-bold text-secondary">📅 {course.date}</span>
+                    </div>
+                  )}
+                  <div className="text-center">
+                    <div className="text-3xl font-santral font-bold text-luxury">
+                      {course.price}
+                    </div>
+                    {course.originalPrice && (
+                      <div className="text-sm text-muted-foreground line-through">
+                        De: {course.originalPrice}
+                      </div>
+                    )}
+                    <div className="text-sm text-muted-foreground">
+                      {course.paymentOptions ? 'Várias opções de pagamento' : 'ou 12x sem juros'}
+                    </div>
                   </div>
                 </div>
               </CardHeader>
