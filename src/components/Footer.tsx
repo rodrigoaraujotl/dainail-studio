@@ -101,10 +101,12 @@ const Footer = () => {
                 </span>
               </div>
               <div className="flex items-center space-x-3">
-                <Mail className="h-4 w-4 text-luxury flex-shrink-0" />
-                <span className="text-background/80">
-                  contato@daianelima.com.br
-                </span>
+                <a className="flex items-center space-x-3" href="mailto:contato@daianelima.com.br" target="_blank" rel="noopener noreferrer">
+                  <Mail className="h-4 w-4 text-luxury flex-shrink-0" />
+                  <span className="text-background/80">
+                    contato@daianelima.com.br
+                  </span>
+                </a>
               </div>
               <div className="flex items-center space-x-3">
                 <Instagram className="h-4 w-4 text-luxury flex-shrink-0" />

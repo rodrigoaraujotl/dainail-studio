@@ -40,7 +40,7 @@ const Contact: React.FC = () => {
     const EVOLUTION_API_URL = 'https://evolution.websense.consulting'; // Ex: 'http://localhost:8080' ou 'https://sua-api.com'
     const EVOLUTION_INSTANCE_NAME = 'Rodrigo - WebSense Consulting'; // Ex: 'dainail-studio'
     const EVOLUTION_API_KEY = 'DAF3A91718B3-46D2-A9A7-8CFFC1D130A1'; // Sua chave da API
-    const YOUR_WHATSAPP_NUMBER = '5511953502929'; // Seu número do WhatsApp
+    const YOUR_WHATSAPP_NUMBER = '5511949976751'; // Seu número do WhatsApp
 
     try {
       // Formatando a mensagem

@@ -9,7 +9,7 @@ const Hero = () => {
         <div className="grid lg:grid-cols-2 gap-12 items-center">
           <div className="space-y-8 ">
             <div className="space-y-4">
-              <h1 className="font-whispering-signature text-5xl lg:text-6xl font-bold text-foreground leading-tight">
+              <h1 className="font-whispering-signature text-4xl lg:text-6xl font-bold text-foreground leading-tight">
                 Transforme suas
                 <span className="block text-luxury"> unhas em arte</span>
               </h1>
