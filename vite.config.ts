@@ -1,4 +1,5 @@
 import { defineConfig } from "vite";
+import { VitePluginRadar } from 'vite-plugin-radar';
 import react from "@vitejs/plugin-react-swc";
 import path from "path";
 import { componentTagger } from "lovable-tagger";
@@ -12,7 +13,6 @@ export default defineConfig(({ mode }) => ({
   },
   plugins: [
     react(),
-    mode === 'development' &&
     componentTagger(),
     Sitemap(
       { 
@@ -42,6 +42,14 @@ export default defineConfig(({ mode }) => ({
         ]
       }
     ),
+    VitePluginRadar({
+      gtm: {
+        id: 'GTM-TKW4B38G'
+      },
+      analytics: {
+        id: 'AW-17548934224'
+      }
+    })
   ].filter(Boolean),
   resolve: {
     alias: {
